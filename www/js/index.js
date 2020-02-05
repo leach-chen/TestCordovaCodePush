@@ -20,6 +20,9 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        document.addEventListener("resume", function () {
+            codePush.sync();
+        });
     },
 
     // deviceready Event Handler
@@ -28,6 +31,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        codePush.sync();
     },
 
     // Update DOM on a Received Event
