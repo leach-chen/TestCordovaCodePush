@@ -1,5 +1,5 @@
 {
-  "_from": "cordova-plugin-code-push",
+  "_from": "cordova-plugin-code-push@latest",
   "_id": "cordova-plugin-code-push@1.12.0",
   "_inBundle": false,
   "_integrity": "sha1-i/CSJcM3c7pLV8bFAcB23XI2aQ8=",
@@ -8,10 +8,10 @@
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "cordova-plugin-code-push",
+    "raw": "cordova-plugin-code-push@latest",
     "name": "cordova-plugin-code-push",
     "escapedName": "cordova-plugin-code-push",
-    "rawSpec": "",
+    "rawSpec": "latest",
     "saveSpec": null,
     "fetchSpec": "latest"
   },
@@ -21,7 +21,7 @@
   ],
   "_resolved": "https://r.cnpmjs.org/cordova-plugin-code-push/download/cordova-plugin-code-push-1.12.0.tgz",
   "_shasum": "8bf09225c33773ba4b57c6c501c076dd7236690f",
-  "_spec": "cordova-plugin-code-push",
+  "_spec": "cordova-plugin-code-push@latest",
   "_where": "D:\\Github\\leach\\Github\\TestCordovaCodePush",
   "author": {
     "name": "Microsoft Corporation"

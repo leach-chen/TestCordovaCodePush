@@ -24,10 +24,10 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-code-push": {},
             "cordova-plugin-file": {},
             "cordova-plugin-file-transfer": {},
-            "cordova-plugin-zip": {}
+            "cordova-plugin-zip": {},
+            "cordova-plugin-code-push": {}
         },
         "platforms": [
             "android"
