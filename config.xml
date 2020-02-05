@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.testcordovapush" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.example.testcordovacodepush" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TestCordovaCodePush</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -18,7 +18,7 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <preference name="CodePushDeploymentKey" value="NSacLG1JPOen6_tkv0ET6-n3s_WP6_oT_Hm1x" />
+        <preference name="CodePushDeploymentKey" value=" NSacLG1JPOen6_tkv0ET6-n3s_WP6_oT_Hm1x" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
