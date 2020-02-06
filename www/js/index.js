@@ -21,7 +21,24 @@ var app = {
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
         document.addEventListener("resume", function () {
-            codePush.sync();
+
+            window.codePush.sync(syncStatus, null, downloadProgress);
+            function syncStatus(status) {
+                switch (status) {
+                    case SyncStatus.DOWNLOADING_PACKAGE:
+                        // Show "downloading" modal
+                        break;
+                    case SyncStatus.INSTALLING_UPDATE:
+                        // Hide "downloading" modal
+                        break;
+                }
+            }
+            function downloadProgress(downloadProgress) {
+                if (downloadProgress) {
+                    // Update "downloading" modal with current download %
+                    console.log("Downloading " + downloadProgress.receivedBytes + " of " + downloadProgress.totalBytes);
+                }
+            }
         });
     },
 
@@ -31,7 +48,26 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-        codePush.sync();
+        console.log('deviceready')
+
+        window.codePush.sync(syncStatus, null, downloadProgress);
+        function syncStatus(status) {
+            switch (status) {
+                case SyncStatus.DOWNLOADING_PACKAGE:
+                    // Show "downloading" modal
+                    break;
+                case SyncStatus.INSTALLING_UPDATE:
+                    // Hide "downloading" modal
+                    break;
+            }
+        }
+
+        function downloadProgress(downloadProgress) {
+            if (downloadProgress) {
+                // Update "downloading" modal with current download %
+                console.log("Downloading " + downloadProgress.receivedBytes + " of " + downloadProgress.totalBytes);
+            }
+        }
     },
 
     // Update DOM on a Received Event

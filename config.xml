@@ -18,7 +18,7 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <preference name="CodePushDeploymentKey" value=" NSacLG1JPOen6_tkv0ET6-n3s_WP6_oT_Hm1x" />
+        <preference name="CodePushDeploymentKey" value="2t3Ha-9xEwI46zXgzcIl1M72H_5yQb0pUxXz9" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
